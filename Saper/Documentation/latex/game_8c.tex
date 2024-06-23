@@ -1,0 +1,90 @@
+\doxysection{Saper/game.c File Reference}
+\hypertarget{game_8c}{}\label{game_8c}\index{Saper/game.c@{Saper/game.c}}
+
+
+Functions for initializing, managing, and cleaning up the game.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include "{}game.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{game_8c_aa33cdac650eeb6053796ada45a8f52c4}{initialize\+\_\+game\+\_\+state}} (\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}game, ALLEGRO\+\_\+\+DISPLAY \texorpdfstring{$\ast$}{*}display, ALLEGRO\+\_\+\+EVENT\+\_\+\+QUEUE \texorpdfstring{$\ast$}{*}event\+\_\+queue, ALLEGRO\+\_\+\+TIMER \texorpdfstring{$\ast$}{*}timer, ALLEGRO\+\_\+\+FONT \texorpdfstring{$\ast$}{*}small\+\_\+font, ALLEGRO\+\_\+\+FONT \texorpdfstring{$\ast$}{*}medium\+\_\+font, ALLEGRO\+\_\+\+FONT \texorpdfstring{$\ast$}{*}big\+\_\+font, ALLEGRO\+\_\+\+BITMAP \texorpdfstring{$\ast$}{*}flag\+\_\+image, ALLEGRO\+\_\+\+BITMAP \texorpdfstring{$\ast$}{*}bomb\+\_\+image)
+\begin{DoxyCompactList}\small\item\em Initializes the game with the provided Allegro resources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a1f68518f52f16204365408a55f57a27c}{initialize\+\_\+game}} (int difficulty, \mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initializes the game board based on the selected difficulty. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a1957a678218ff4e01e0aad149b89d2cf}{cleanup\+\_\+resources}} (\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Cleans up all resources used by the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for initializing, managing, and cleaning up the game. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{game_8c_a1957a678218ff4e01e0aad149b89d2cf}\index{game.c@{game.c}!cleanup\_resources@{cleanup\_resources}}
+\index{cleanup\_resources@{cleanup\_resources}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{cleanup\_resources()}{cleanup\_resources()}}
+{\footnotesize\ttfamily \label{game_8c_a1957a678218ff4e01e0aad149b89d2cf} 
+void cleanup\+\_\+resources (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Cleans up all resources used by the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the \doxylink{struct_game}{Game} structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{game_8c_a1f68518f52f16204365408a55f57a27c}\index{game.c@{game.c}!initialize\_game@{initialize\_game}}
+\index{initialize\_game@{initialize\_game}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{initialize\_game()}{initialize\_game()}}
+{\footnotesize\ttfamily \label{game_8c_a1f68518f52f16204365408a55f57a27c} 
+void initialize\+\_\+game (\begin{DoxyParamCaption}\item[{int}]{difficulty}{, }\item[{\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the game board based on the selected difficulty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em difficulty} & The difficulty level of the game (1 = easy, 2 = medium, 3 = hard). \\
+\hline
+{\em game} & Pointer to the \doxylink{struct_game}{Game} structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{game_8c_aa33cdac650eeb6053796ada45a8f52c4}\index{game.c@{game.c}!initialize\_game\_state@{initialize\_game\_state}}
+\index{initialize\_game\_state@{initialize\_game\_state}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{initialize\_game\_state()}{initialize\_game\_state()}}
+{\footnotesize\ttfamily \label{game_8c_aa33cdac650eeb6053796ada45a8f52c4} 
+void initialize\+\_\+game\+\_\+state (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{ALLEGRO\+\_\+\+DISPLAY \texorpdfstring{$\ast$}{*}}]{display}{, }\item[{ALLEGRO\+\_\+\+EVENT\+\_\+\+QUEUE \texorpdfstring{$\ast$}{*}}]{event\+\_\+queue}{, }\item[{ALLEGRO\+\_\+\+TIMER \texorpdfstring{$\ast$}{*}}]{timer}{, }\item[{ALLEGRO\+\_\+\+FONT \texorpdfstring{$\ast$}{*}}]{small\+\_\+font}{, }\item[{ALLEGRO\+\_\+\+FONT \texorpdfstring{$\ast$}{*}}]{medium\+\_\+font}{, }\item[{ALLEGRO\+\_\+\+FONT \texorpdfstring{$\ast$}{*}}]{big\+\_\+font}{, }\item[{ALLEGRO\+\_\+\+BITMAP \texorpdfstring{$\ast$}{*}}]{flag\+\_\+image}{, }\item[{ALLEGRO\+\_\+\+BITMAP \texorpdfstring{$\ast$}{*}}]{bomb\+\_\+image}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the game with the provided Allegro resources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the \doxylink{struct_game}{Game} structure. \\
+\hline
+{\em display} & Pointer to the Allegro display. \\
+\hline
+{\em event\+\_\+queue} & Pointer to the Allegro event queue. \\
+\hline
+{\em timer} & Pointer to the Allegro timer. \\
+\hline
+{\em small\+\_\+font} & Pointer to the small font used in the game. \\
+\hline
+{\em medium\+\_\+font} & Pointer to the medium font used in the game. \\
+\hline
+{\em big\+\_\+font} & Pointer to the big font used in the game. \\
+\hline
+{\em flag\+\_\+image} & Pointer to the flag image bitmap. \\
+\hline
+{\em bomb\+\_\+image} & Pointer to the bomb image bitmap. \\
+\hline
+\end{DoxyParams}

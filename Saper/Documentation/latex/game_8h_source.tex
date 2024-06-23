@@ -1,0 +1,42 @@
+\doxysection{game.\+h}
+\hypertarget{game_8h_source}{}\label{game_8h_source}\index{Saper/game.h@{Saper/game.h}}
+\mbox{\hyperlink{game_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}allegro5/allegro.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}allegro5/allegro\_font.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}allegro5/allegro\_primitives.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{utils_8h}{utils.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_game}{Game}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_game_a96e9a5fa345920a6c4a748ecb81f4d48}{rows}};\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_game_a06edd0776972525659215b0dd3324715}{cols}};\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_game_a1e28bc7ec492397bda02daa722108219}{mines}};\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{int}**\ \mbox{\hyperlink{struct_game_a58254b0546b9030175ec911532f7c3ff}{board}};\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{bool}**\ \mbox{\hyperlink{struct_game_af188b9ce931adca727dac3f1a811e187}{revealed}};\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}**\ \mbox{\hyperlink{struct_game_a0c4ba10b05d7d9df98034c5f510801a9}{flagged}};\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_game_ae910a33b0b8246d3ece3d29503d98af7}{game\_over}};\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_game_a32c8eafb3eed112ea2bad7d5c4612e8d}{game\_won}};\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_game_a53010c87d983137a7b5b11393d8736e1}{start\_x}};\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_game_ad6f739f330ac47d548e19044d87ad182}{start\_y}};\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_game_a22054e84bd1b440f4c30b43b450c63a0}{elapsed\_time}};\ }
+\DoxyCodeLine{00030\ \ \ \ \ ALLEGRO\_DISPLAY*\ \mbox{\hyperlink{struct_game_a2bf8ece79fe05b03c31f2e2ede42e5f5}{display}};\ }
+\DoxyCodeLine{00031\ \ \ \ \ ALLEGRO\_EVENT\_QUEUE*\ \mbox{\hyperlink{struct_game_a820782e408ff7a704dc12af67eb0c44f}{event\_queue}};\ }
+\DoxyCodeLine{00032\ \ \ \ \ ALLEGRO\_TIMER*\ \mbox{\hyperlink{struct_game_a8d6d4f06c6412d085112cd007977d868}{timer}};\ }
+\DoxyCodeLine{00033\ \ \ \ \ ALLEGRO\_FONT*\ \mbox{\hyperlink{struct_game_a7e05672d6160c04e65ba5faacb56e585}{small\_font}};\ }
+\DoxyCodeLine{00034\ \ \ \ \ ALLEGRO\_FONT*\ \mbox{\hyperlink{struct_game_a87aa38d15d15ddea7be790183b1daf02}{medium\_font}};\ }
+\DoxyCodeLine{00035\ \ \ \ \ ALLEGRO\_FONT*\ \mbox{\hyperlink{struct_game_aa913c5d43f295a9783cb4afdbd0c3b2d}{big\_font}};\ }
+\DoxyCodeLine{00036\ \ \ \ \ ALLEGRO\_BITMAP*\ \mbox{\hyperlink{struct_game_a45f5fb56de3ebb965bdd4912ef9cf82a}{flag\_image}};\ }
+\DoxyCodeLine{00037\ \ \ \ \ ALLEGRO\_BITMAP*\ \mbox{\hyperlink{struct_game_aa58ba640ce9098be30c615d78f33bb75}{bomb\_image}};\ }
+\DoxyCodeLine{00038\ \ \ \ \ ALLEGRO\_COLOR\ \mbox{\hyperlink{struct_game_a8c2901bf93009fde66a6cde485fbf1dc}{color}};\ }
+\DoxyCodeLine{00039\ \}\ \mbox{\hyperlink{game_8h_a69b5df78d315f81ed77df30fdbfb7002}{Game}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_aa33cdac650eeb6053796ada45a8f52c4}{initialize\_game\_state}}(\mbox{\hyperlink{struct_game}{Game}}*\ game,\ ALLEGRO\_DISPLAY*\ display,\ ALLEGRO\_EVENT\_QUEUE*\ event\_queue,\ ALLEGRO\_TIMER*\ timer,\ ALLEGRO\_FONT*\ small\_font,\ ALLEGRO\_FONT*\ medium\_font,\ ALLEGRO\_FONT*\ big\_font,\ ALLEGRO\_BITMAP*\ flag\_image,\ ALLEGRO\_BITMAP*\ bomb\_image);}
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a1f68518f52f16204365408a55f57a27c}{initialize\_game}}(\textcolor{keywordtype}{int}\ difficulty,\ \mbox{\hyperlink{struct_game}{Game}}*\ game);}
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{game_8h_a1957a678218ff4e01e0aad149b89d2cf}{cleanup\_resources}}(\mbox{\hyperlink{struct_game}{Game}}*\ game);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+
+\end{DoxyCode}

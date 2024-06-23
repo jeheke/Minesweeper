@@ -1,0 +1,173 @@
+\doxysection{Game Struct Reference}
+\hypertarget{struct_game}{}\label{struct_game}\index{Game@{Game}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_game_a96e9a5fa345920a6c4a748ecb81f4d48}{rows}}
+\item 
+int \mbox{\hyperlink{struct_game_a06edd0776972525659215b0dd3324715}{cols}}
+\item 
+int \mbox{\hyperlink{struct_game_a1e28bc7ec492397bda02daa722108219}{mines}}
+\item 
+int \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_a58254b0546b9030175ec911532f7c3ff}{board}}
+\item 
+bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_af188b9ce931adca727dac3f1a811e187}{revealed}}
+\item 
+bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_a0c4ba10b05d7d9df98034c5f510801a9}{flagged}}
+\item 
+bool \mbox{\hyperlink{struct_game_ae910a33b0b8246d3ece3d29503d98af7}{game\+\_\+over}}
+\item 
+bool \mbox{\hyperlink{struct_game_a32c8eafb3eed112ea2bad7d5c4612e8d}{game\+\_\+won}}
+\item 
+int \mbox{\hyperlink{struct_game_a53010c87d983137a7b5b11393d8736e1}{start\+\_\+x}}
+\item 
+int \mbox{\hyperlink{struct_game_ad6f739f330ac47d548e19044d87ad182}{start\+\_\+y}}
+\item 
+double \mbox{\hyperlink{struct_game_a22054e84bd1b440f4c30b43b450c63a0}{elapsed\+\_\+time}}
+\item 
+ALLEGRO\+\_\+\+DISPLAY \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_a2bf8ece79fe05b03c31f2e2ede42e5f5}{display}}
+\item 
+ALLEGRO\+\_\+\+EVENT\+\_\+\+QUEUE \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_a820782e408ff7a704dc12af67eb0c44f}{event\+\_\+queue}}
+\item 
+ALLEGRO\+\_\+\+TIMER \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_a8d6d4f06c6412d085112cd007977d868}{timer}}
+\item 
+ALLEGRO\+\_\+\+FONT \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_a7e05672d6160c04e65ba5faacb56e585}{small\+\_\+font}}
+\item 
+ALLEGRO\+\_\+\+FONT \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_a87aa38d15d15ddea7be790183b1daf02}{medium\+\_\+font}}
+\item 
+ALLEGRO\+\_\+\+FONT \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_aa913c5d43f295a9783cb4afdbd0c3b2d}{big\+\_\+font}}
+\item 
+ALLEGRO\+\_\+\+BITMAP \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_a45f5fb56de3ebb965bdd4912ef9cf82a}{flag\+\_\+image}}
+\item 
+ALLEGRO\+\_\+\+BITMAP \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_game_aa58ba640ce9098be30c615d78f33bb75}{bomb\+\_\+image}}
+\item 
+ALLEGRO\+\_\+\+COLOR \mbox{\hyperlink{struct_game_a8c2901bf93009fde66a6cde485fbf1dc}{color}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_game_aa913c5d43f295a9783cb4afdbd0c3b2d}\index{Game@{Game}!big\_font@{big\_font}}
+\index{big\_font@{big\_font}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{big\_font}{big\_font}}
+{\footnotesize\ttfamily \label{struct_game_aa913c5d43f295a9783cb4afdbd0c3b2d} 
+ALLEGRO\+\_\+\+FONT\texorpdfstring{$\ast$}{*} Game\+::big\+\_\+font}
+
+Pointer to the big font used in the game. \Hypertarget{struct_game_a58254b0546b9030175ec911532f7c3ff}\index{Game@{Game}!board@{board}}
+\index{board@{board}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{board}{board}}
+{\footnotesize\ttfamily \label{struct_game_a58254b0546b9030175ec911532f7c3ff} 
+int\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Game\+::board}
+
+2D array representing the game board. -\/1 indicates a mine, other values indicate the number of adjacent mines. \Hypertarget{struct_game_aa58ba640ce9098be30c615d78f33bb75}\index{Game@{Game}!bomb\_image@{bomb\_image}}
+\index{bomb\_image@{bomb\_image}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{bomb\_image}{bomb\_image}}
+{\footnotesize\ttfamily \label{struct_game_aa58ba640ce9098be30c615d78f33bb75} 
+ALLEGRO\+\_\+\+BITMAP\texorpdfstring{$\ast$}{*} Game\+::bomb\+\_\+image}
+
+Pointer to the bomb image bitmap. \Hypertarget{struct_game_a8c2901bf93009fde66a6cde485fbf1dc}\index{Game@{Game}!color@{color}}
+\index{color@{color}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \label{struct_game_a8c2901bf93009fde66a6cde485fbf1dc} 
+ALLEGRO\+\_\+\+COLOR Game\+::color}
+
+Color used for drawing text and graphics. \Hypertarget{struct_game_a06edd0776972525659215b0dd3324715}\index{Game@{Game}!cols@{cols}}
+\index{cols@{cols}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{cols}{cols}}
+{\footnotesize\ttfamily \label{struct_game_a06edd0776972525659215b0dd3324715} 
+int Game\+::cols}
+
+Number of columns in the game board. \Hypertarget{struct_game_a2bf8ece79fe05b03c31f2e2ede42e5f5}\index{Game@{Game}!display@{display}}
+\index{display@{display}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{display}{display}}
+{\footnotesize\ttfamily \label{struct_game_a2bf8ece79fe05b03c31f2e2ede42e5f5} 
+ALLEGRO\+\_\+\+DISPLAY\texorpdfstring{$\ast$}{*} Game\+::display}
+
+Pointer to the Allegro display. \Hypertarget{struct_game_a22054e84bd1b440f4c30b43b450c63a0}\index{Game@{Game}!elapsed\_time@{elapsed\_time}}
+\index{elapsed\_time@{elapsed\_time}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{elapsed\_time}{elapsed\_time}}
+{\footnotesize\ttfamily \label{struct_game_a22054e84bd1b440f4c30b43b450c63a0} 
+double Game\+::elapsed\+\_\+time}
+
+Time elapsed since the game started. \Hypertarget{struct_game_a820782e408ff7a704dc12af67eb0c44f}\index{Game@{Game}!event\_queue@{event\_queue}}
+\index{event\_queue@{event\_queue}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{event\_queue}{event\_queue}}
+{\footnotesize\ttfamily \label{struct_game_a820782e408ff7a704dc12af67eb0c44f} 
+ALLEGRO\+\_\+\+EVENT\+\_\+\+QUEUE\texorpdfstring{$\ast$}{*} Game\+::event\+\_\+queue}
+
+Pointer to the Allegro event queue. \Hypertarget{struct_game_a45f5fb56de3ebb965bdd4912ef9cf82a}\index{Game@{Game}!flag\_image@{flag\_image}}
+\index{flag\_image@{flag\_image}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{flag\_image}{flag\_image}}
+{\footnotesize\ttfamily \label{struct_game_a45f5fb56de3ebb965bdd4912ef9cf82a} 
+ALLEGRO\+\_\+\+BITMAP\texorpdfstring{$\ast$}{*} Game\+::flag\+\_\+image}
+
+Pointer to the flag image bitmap. \Hypertarget{struct_game_a0c4ba10b05d7d9df98034c5f510801a9}\index{Game@{Game}!flagged@{flagged}}
+\index{flagged@{flagged}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{flagged}{flagged}}
+{\footnotesize\ttfamily \label{struct_game_a0c4ba10b05d7d9df98034c5f510801a9} 
+bool\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Game\+::flagged}
+
+2D array indicating if a cell is flagged. \Hypertarget{struct_game_ae910a33b0b8246d3ece3d29503d98af7}\index{Game@{Game}!game\_over@{game\_over}}
+\index{game\_over@{game\_over}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{game\_over}{game\_over}}
+{\footnotesize\ttfamily \label{struct_game_ae910a33b0b8246d3ece3d29503d98af7} 
+bool Game\+::game\+\_\+over}
+
+Indicates if the game is over. \Hypertarget{struct_game_a32c8eafb3eed112ea2bad7d5c4612e8d}\index{Game@{Game}!game\_won@{game\_won}}
+\index{game\_won@{game\_won}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{game\_won}{game\_won}}
+{\footnotesize\ttfamily \label{struct_game_a32c8eafb3eed112ea2bad7d5c4612e8d} 
+bool Game\+::game\+\_\+won}
+
+Indicates if the game is won. \Hypertarget{struct_game_a87aa38d15d15ddea7be790183b1daf02}\index{Game@{Game}!medium\_font@{medium\_font}}
+\index{medium\_font@{medium\_font}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{medium\_font}{medium\_font}}
+{\footnotesize\ttfamily \label{struct_game_a87aa38d15d15ddea7be790183b1daf02} 
+ALLEGRO\+\_\+\+FONT\texorpdfstring{$\ast$}{*} Game\+::medium\+\_\+font}
+
+Pointer to the medium font used in the game. \Hypertarget{struct_game_a1e28bc7ec492397bda02daa722108219}\index{Game@{Game}!mines@{mines}}
+\index{mines@{mines}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{mines}{mines}}
+{\footnotesize\ttfamily \label{struct_game_a1e28bc7ec492397bda02daa722108219} 
+int Game\+::mines}
+
+Number of mines in the game board. \Hypertarget{struct_game_af188b9ce931adca727dac3f1a811e187}\index{Game@{Game}!revealed@{revealed}}
+\index{revealed@{revealed}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{revealed}{revealed}}
+{\footnotesize\ttfamily \label{struct_game_af188b9ce931adca727dac3f1a811e187} 
+bool\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Game\+::revealed}
+
+2D array indicating if a cell is revealed. \Hypertarget{struct_game_a96e9a5fa345920a6c4a748ecb81f4d48}\index{Game@{Game}!rows@{rows}}
+\index{rows@{rows}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily \label{struct_game_a96e9a5fa345920a6c4a748ecb81f4d48} 
+int Game\+::rows}
+
+Number of rows in the game board. \Hypertarget{struct_game_a7e05672d6160c04e65ba5faacb56e585}\index{Game@{Game}!small\_font@{small\_font}}
+\index{small\_font@{small\_font}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{small\_font}{small\_font}}
+{\footnotesize\ttfamily \label{struct_game_a7e05672d6160c04e65ba5faacb56e585} 
+ALLEGRO\+\_\+\+FONT\texorpdfstring{$\ast$}{*} Game\+::small\+\_\+font}
+
+Pointer to the small font used in the game. \Hypertarget{struct_game_a53010c87d983137a7b5b11393d8736e1}\index{Game@{Game}!start\_x@{start\_x}}
+\index{start\_x@{start\_x}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{start\_x}{start\_x}}
+{\footnotesize\ttfamily \label{struct_game_a53010c87d983137a7b5b11393d8736e1} 
+int Game\+::start\+\_\+x}
+
+Starting x-\/coordinate for rendering the game board. \Hypertarget{struct_game_ad6f739f330ac47d548e19044d87ad182}\index{Game@{Game}!start\_y@{start\_y}}
+\index{start\_y@{start\_y}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{start\_y}{start\_y}}
+{\footnotesize\ttfamily \label{struct_game_ad6f739f330ac47d548e19044d87ad182} 
+int Game\+::start\+\_\+y}
+
+Starting y-\/coordinate for rendering the game board. \Hypertarget{struct_game_a8d6d4f06c6412d085112cd007977d868}\index{Game@{Game}!timer@{timer}}
+\index{timer@{timer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily \label{struct_game_a8d6d4f06c6412d085112cd007977d868} 
+ALLEGRO\+\_\+\+TIMER\texorpdfstring{$\ast$}{*} Game\+::timer}
+
+Pointer to the Allegro timer. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Saper/\mbox{\hyperlink{game_8h}{game.\+h}}\end{DoxyCompactItemize}

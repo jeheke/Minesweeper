@@ -1,0 +1,112 @@
+\doxysection{Saper/gameboard.h File Reference}
+\hypertarget{gameboard_8h}{}\label{gameboard_8h}\index{Saper/gameboard.h@{Saper/gameboard.h}}
+
+
+Functions for rendering the game graphics and managing game state updates.  
+
+
+{\ttfamily \#include "{}game.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{gameboard_8h_a3031bf0aef41105eef01439c74c2369b}{draw\+\_\+board}} (\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Draws the game board and updates the display. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gameboard_8h_a1f78f131007f5af49e09f324dcc5f577}{reveal\+\_\+cell}} (int i, int j, \mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Reveals the cell at the specified coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gameboard_8h_ab260fb8c7051056ddd3b65a45dbed607}{toggle\+\_\+flag}} (int row, int col, \mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Toggles the flag state of the cell at the specified coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gameboard_8h_a9ac9ed60d374f314f8143404702e3427}{check\+\_\+game\+\_\+won}} (\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks if the game is won. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gameboard_8h_af5e74e455ff8082ef2996e840c442515}{update\+\_\+timer}} (\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Updates the game timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions for rendering the game graphics and managing game state updates. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{gameboard_8h_a9ac9ed60d374f314f8143404702e3427}\index{gameboard.h@{gameboard.h}!check\_game\_won@{check\_game\_won}}
+\index{check\_game\_won@{check\_game\_won}!gameboard.h@{gameboard.h}}
+\doxysubsubsection{\texorpdfstring{check\_game\_won()}{check\_game\_won()}}
+{\footnotesize\ttfamily \label{gameboard_8h_a9ac9ed60d374f314f8143404702e3427} 
+void check\+\_\+game\+\_\+won (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the game is won. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the \doxylink{struct_game}{Game} structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{gameboard_8h_a3031bf0aef41105eef01439c74c2369b}\index{gameboard.h@{gameboard.h}!draw\_board@{draw\_board}}
+\index{draw\_board@{draw\_board}!gameboard.h@{gameboard.h}}
+\doxysubsubsection{\texorpdfstring{draw\_board()}{draw\_board()}}
+{\footnotesize\ttfamily \label{gameboard_8h_a3031bf0aef41105eef01439c74c2369b} 
+void draw\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Draws the game board and updates the display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the \doxylink{struct_game}{Game} structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{gameboard_8h_a1f78f131007f5af49e09f324dcc5f577}\index{gameboard.h@{gameboard.h}!reveal\_cell@{reveal\_cell}}
+\index{reveal\_cell@{reveal\_cell}!gameboard.h@{gameboard.h}}
+\doxysubsubsection{\texorpdfstring{reveal\_cell()}{reveal\_cell()}}
+{\footnotesize\ttfamily \label{gameboard_8h_a1f78f131007f5af49e09f324dcc5f577} 
+void reveal\+\_\+cell (\begin{DoxyParamCaption}\item[{int}]{i}{, }\item[{int}]{j}{, }\item[{\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Reveals the cell at the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The row index of the cell. \\
+\hline
+{\em j} & The column index of the cell. \\
+\hline
+{\em game} & Pointer to the \doxylink{struct_game}{Game} structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{gameboard_8h_ab260fb8c7051056ddd3b65a45dbed607}\index{gameboard.h@{gameboard.h}!toggle\_flag@{toggle\_flag}}
+\index{toggle\_flag@{toggle\_flag}!gameboard.h@{gameboard.h}}
+\doxysubsubsection{\texorpdfstring{toggle\_flag()}{toggle\_flag()}}
+{\footnotesize\ttfamily \label{gameboard_8h_ab260fb8c7051056ddd3b65a45dbed607} 
+void toggle\+\_\+flag (\begin{DoxyParamCaption}\item[{int}]{row}{, }\item[{int}]{col}{, }\item[{\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Toggles the flag state of the cell at the specified coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & The row index of the cell. \\
+\hline
+{\em col} & The column index of the cell. \\
+\hline
+{\em game} & Pointer to the \doxylink{struct_game}{Game} structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{gameboard_8h_af5e74e455ff8082ef2996e840c442515}\index{gameboard.h@{gameboard.h}!update\_timer@{update\_timer}}
+\index{update\_timer@{update\_timer}!gameboard.h@{gameboard.h}}
+\doxysubsubsection{\texorpdfstring{update\_timer()}{update\_timer()}}
+{\footnotesize\ttfamily \label{gameboard_8h_af5e74e455ff8082ef2996e840c442515} 
+void update\+\_\+timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_game}{Game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Updates the game timer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the \doxylink{struct_game}{Game} structure. \\
+\hline
+\end{DoxyParams}
